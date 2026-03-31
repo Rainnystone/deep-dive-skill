@@ -1,6 +1,6 @@
-# 🔬 Deep Dive Skill for Claude Code
+# 🔬 Deep Dive Skill v2.0 for Claude Code
 
-A research-grade search skill for Claude Code that performs multi-source parallel searching, cross-validation, causal analysis, and credibility assessment.
+A research-grade search skill for Claude Code that performs multi-source parallel searching, cross-validation, source tracing, and credibility assessment.
 
 ---
 
@@ -8,11 +8,35 @@ A research-grade search skill for Claude Code that performs multi-source paralle
 
 **Deep Dive** is a specialized skill for Claude Code that transforms ordinary search into comprehensive research.
 
-| Ordinary Search | Deep Dive |
-|----------------|-----------|
-| Finds information | Validates information + Analyzes causation + Assesses credibility |
+| Ordinary Search | Deep Dive v2 |
+|----------------|-------------|
+| Finds information | Validates + Traces sources + Detects conflicts + Assesses credibility |
 
-When you need: **deep research**, **cross-validation**, **exploring causes**, **assessing credibility**, **multi-source comparison**
+---
+
+## v2.0 Key Improvements
+
+| Feature | v1.0 | v2.0 |
+|---------|------|------|
+| **Output Format** | Fixed 200-line template | 8 core checkpoints, agent organizes freely |
+| **CLI Optimization** | Long paragraphs | Compact tables, status markers, source chains |
+| **Source Tracing** | Simple tier classification | 4-step tracing process with scoring bonus |
+| **Conflict Detection** | Manual matrix | Auto semantic alignment + conflict handling |
+
+---
+
+## Core Checkpoints (Output Must Contain)
+
+```
+1. ✅ TL;DR - 3-5 key conclusions
+2. ✅ Credibility Overview - high/medium/low/doubtful stats
+3. ✅ Key Findings - verified facts with source mapping
+4. ✅ Conflicts/Controversies - information conflicts analysis
+5. ✅ Source Tracing Results - primary source tracking
+6. ✅ Causal Analysis - motivation inference (if applicable)
+7. ✅ Limitations - research gaps, unverified points
+8. ✅ Source List - sorted by credibility
+```
 
 ---
 
